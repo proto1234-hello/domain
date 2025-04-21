@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Portfolio Web</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f4f4f9;
+      }
+      header {
+        background: #5d5c61;
+      }
+      nav .nav-link {
+        color: #f4f4f9 !important;
+      }
+      section {
+        margin-top: 20px;
+      }
+      footer {
+        background-color: #379683;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="text-white text-center py-3">
+      <h2>My Portfolio</h2>
+      <nav>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="container my-4 text-center">
+      <h2>Home Page</h2>
+      <img
+        src="images/png.JPG"
+        alt="picture of Abbey"
+        class="img-fluid rounded"
+        style="max-width: 500px; height: auto"
+      />
+      <p class="mt-3">
+        Hi, I'm Abbey Hassif. As a front-end developer, I craft responsive and
+        user-friendly web applications. With expertise in HTML, CSS, and
+        JavaScript, I bring design concepts to life.
+      </p>
+    </section>
+
+    <section id="about" class="container bg-white shadow-sm py-5 text-center">
+      <h2>About Me</h2>
+      <p>
+        As a passionate and detail-driven front-end developer, I specialize in
+        crafting responsive, user-friendly, and visually stunning web
+        applications.
+      </p>
+      <ul class="list-group">
+        <li class="list-group-item">
+          Front-end development: HTML, CSS, JavaScript, Git
+        </li>
+        <li class="list-group-item">Responsive web design</li>
+        <li class="list-group-item">Agile development methodologies</li>
+      </ul>
+      <p class="mt-4">
+        I am currently a student at Ghana Technology University offering a
+        Diploma in Computer Science. I have also worked as an intern Developer
+        at Eitsec Technologies, assisting in the development of front-end
+        features and learning new technologies and frameworks.
+      </p>
+      <div class="container">
+        <h3>Let's Connect!</h3>
+        <div class="d-flex justify-content-center gap-3 my-3">
+          <a
+            href="mailto:abbeyhassif@gmail.com"
+            target="_blank"
+            class="btn btn-outline-primary"
+            >Email</a
+          >
+
+          <a
+            href="https://www.linkedin.com/in/hassif-abbey-227877350"
+            target="_blank"
+            class="btn btn-outline-info"
+            >LinkedIn</a
+          >
+
+          <a
+            href="https://twitter.com/@protocol33320"
+            target="_blank"
+            class="btn btn-outline-secondary"
+            >Twitter</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="project" class="container my-4">
+      <h2 class="text-center">My Projects</h2>
+      <div class="card-deck">
+        <div class="card bg-light">
+          <div class="card-body">
+            <h5 class="card-title">Weather Dashboard</h5>
+            <p class="card-text">
+              Created a weather dashboard using HTML, CSS, and JavaScript.
+              Incorporated features such as real-time weather updates,
+              location-based forecasting, and temperature conversion.
+            </p>
+            <a
+              href="https://weather-app-vercel-omega.vercel.app/"
+              class="btn btn-primary"
+              >View Project</a
+            >
+          </div>
+        </div>
+        <div class="card bg-light">
+          <div class="card-body">
+            <h5 class="card-title">BMI Calculator</h5>
+            <p class="card-text">
+              An interactive BMI calculator providing health status based on
+              your body mass index.
+            </p>
+            <a
+              href="https://bmicalculatorcom.vercel.app/"
+              class="btn btn-primary"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container my-4">
+      <h2 class="text-center">Contact Form</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" class="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Send</button>
+      </form>
+    </section>
+
+    <footer class="text-white text-center py-3">
+      <p>&copy; 2025 My Portfolio Website</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
